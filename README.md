@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Gameify
+Gameify is a web application that allows users to manage their game collection. Users can add, update, and delete games, and the application fetches game images using the RAWG API. The project is built using Next.js, Firebase (Firestore and Authentication), Tailwind CSS, and the RAWG API.
 
-## Getting Started
+Features
+User Authentication:
 
-First, run the development server:
+Sign up and log in using email/password or Google.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Logout functionality.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Game Management:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Add new games with details like title, rating, and whether it's a "Game of the Year."
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Fetch game images automatically using the RAWG API.
 
-## Learn More
+Update and delete games.
 
-To learn more about Next.js, take a look at the following resources:
+Responsive UI:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Built with Tailwind CSS for a modern and responsive design.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Dark and Purple Theme:
 
-## Deploy on Vercel
+A visually appealing dark theme with purple accents and gradient backgrounds.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Technologies Used
+Frontend:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js - React framework for server-side rendering and static site generation.
+
+Tailwind CSS - Utility-first CSS framework for styling.
+
+Backend:
+
+Firebase - For authentication and Firestore database.
+
+APIs:
+
+RAWG API - For fetching game images and details.
+
+
+
+
+How It Works
+1. Authentication:
+
+Users can sign up or log in using their email/password or Google account.
+
+Firebase Authentication handles user management.
+
+2. Game Management:
+
+Users can add a new game by providing the title, rating, and whether it's a "Game of the Year."
+
+The application fetches the game image from the RAWG API using the game title.
+
+Games are stored in Firestore, and users can update or delete them.
+
+3. Image Fetching:
+
+The RAWG API is used to fetch game images based on the game title.
+
+If no image is found, a placeholder image is displayed.
+
+4. UI:
+
+The UI is built with Tailwind CSS, featuring a dark and purple theme with gradient backgrounds and glow effects.
