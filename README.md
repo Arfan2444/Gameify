@@ -1,3 +1,13 @@
+
+Contact
+For any questions or feedback, feel free to reach out:
+
+Arfan Pathan
+
+Email: pathanarfan8@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/arfan-pathan-82aab2312/
+
 Gameify
 Gameify is a web application that allows users to manage their game collection. Users can add, update, and delete games, and the application fetches game images using the RAWG API. The project is built using Next.js, Firebase (Firestore and Authentication), Tailwind CSS, and the RAWG API.
 
